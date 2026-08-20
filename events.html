@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events | Princeton Society of Philosophy Students</title>
+<meta name="description" content="Upcoming events for the Princeton Society of Philosophy Students.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ Shield logo (recreated as inline SVG; reused via <use>) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="psoph-mark">
+      <!-- shield -->
+      <path d="M60 4 L112 18 V64 C112 96 90 118 60 132 C30 118 8 96 8 64 V18 Z" fill="#FAF6EF" stroke="#33302A" stroke-width="5"/>
+      <!-- split field -->
+      <path d="M60 10 L106 22 V60 H60 Z" fill="#D57E33"/>
+      <path d="M60 10 L14 22 V60 H60 Z" fill="#33302A"/>
+      <!-- open book -->
+      <path d="M18 62 C34 54 50 54 60 62 C70 54 86 54 102 62 V96 C86 88 70 88 60 96 C50 88 34 88 18 96 Z" fill="#fff" stroke="#33302A" stroke-width="4" stroke-linejoin="round"/>
+      <line x1="60" y1="62" x2="60" y2="96" stroke="#33302A" stroke-width="3"/>
+      <!-- column -->
+      <rect x="52" y="52" width="16" height="30" rx="2" fill="#fff" stroke="#33302A" stroke-width="3.5"/>
+      <line x1="56" y1="55" x2="56" y2="79" stroke="#33302A" stroke-width="2"/>
+      <line x1="64" y1="55" x2="64" y2="79" stroke="#33302A" stroke-width="2"/>
+      <rect x="48" y="46" width="24" height="7" rx="3" fill="#fff" stroke="#33302A" stroke-width="3.5"/>
+      <!-- flame -->
+      <path d="M60 20 C66 27 68 33 64 39 C62 42 58 42 56 39 C52 33 54 27 60 20 Z" fill="#D57E33" stroke="#33302A" stroke-width="3" stroke-linejoin="round"/>
+    </g>
+    <path id="psoph-blob" d="M210 20 C300 -10 420 40 430 150 C440 260 340 330 230 320 C120 310 20 260 30 160 C40 60 120 50 210 20 Z"/>
+  </defs>
+</svg>
+
+<nav aria-label="Main">
+  <div class="nav-inner">
+    <svg class="mark" viewBox="0 0 120 138" role="img" aria-label="PSoPh shield logo"><use href="#psoph-mark"/></svg>
+    <span class="nav-name">Princeton Society of Philosophy Students</span>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="events.html" class="active" aria-current="page">Events</a>
+      <a href="officers.html">Officers</a>
+      <a href="resources.html">Resources</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ EVENTS ============ -->
+<section id="events">
+  <div class="wrap">
+    <p class="eyebrow">Events</p>
+    <h2>What's coming up</h2>
+    <p class="lede">Everything we host lives on this calendar. Subscribe once and never miss a talk.</p>
+    <div class="card-cal">
+      <!-- EDIT ME: replace YOUR_CALENDAR_ID with the club's Google Calendar ID
+           (Google Calendar → Settings → "Integrate calendar" → Calendar ID) -->
+      <iframe
+        title="PSoPh events calendar"
+        src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID%40group.calendar.google.com&ctz=America%2FNew_York&mode=MONTH&bgcolor=%23FAF6EF"
+        loading="lazy">
+      </iframe>
+    </div>
+    <div class="cal-actions">
+      <!-- EDIT ME: same calendar ID in both links -->
+      <a class="btn" href="https://calendar.google.com/calendar/u/0?cid=YOUR_CALENDAR_ID">Add to Google Calendar</a>
+      <a class="btn ghost" href="https://calendar.google.com/calendar/ical/YOUR_CALENDAR_ID/public/basic.ics">Subscribe via iCal</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <svg class="mark" viewBox="0 0 120 138" aria-hidden="true"><use href="#psoph-mark"/></svg>
+  Princeton Society of Philosophy Students · PSoPh<br>
+  Everyone is welcome. Bring a question.
+</footer>
+
+
+
+</body>
+</html>

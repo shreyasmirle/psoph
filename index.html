@@ -12,33 +12,16 @@
 </head>
 <body>
 
-<!-- ============ Shield logo (recreated as inline SVG; reused via <use>) ============ -->
+<!-- Decorative background shape used in the homepage hero -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
-    <g id="psoph-mark">
-      <!-- shield -->
-      <path d="M60 4 L112 18 V64 C112 96 90 118 60 132 C30 118 8 96 8 64 V18 Z" fill="#FAF6EF" stroke="#33302A" stroke-width="5"/>
-      <!-- split field -->
-      <path d="M60 10 L106 22 V60 H60 Z" fill="#D57E33"/>
-      <path d="M60 10 L14 22 V60 H60 Z" fill="#33302A"/>
-      <!-- open book -->
-      <path d="M18 62 C34 54 50 54 60 62 C70 54 86 54 102 62 V96 C86 88 70 88 60 96 C50 88 34 88 18 96 Z" fill="#fff" stroke="#33302A" stroke-width="4" stroke-linejoin="round"/>
-      <line x1="60" y1="62" x2="60" y2="96" stroke="#33302A" stroke-width="3"/>
-      <!-- column -->
-      <rect x="52" y="52" width="16" height="30" rx="2" fill="#fff" stroke="#33302A" stroke-width="3.5"/>
-      <line x1="56" y1="55" x2="56" y2="79" stroke="#33302A" stroke-width="2"/>
-      <line x1="64" y1="55" x2="64" y2="79" stroke="#33302A" stroke-width="2"/>
-      <rect x="48" y="46" width="24" height="7" rx="3" fill="#fff" stroke="#33302A" stroke-width="3.5"/>
-      <!-- flame -->
-      <path d="M60 20 C66 27 68 33 64 39 C62 42 58 42 56 39 C52 33 54 27 60 20 Z" fill="#D57E33" stroke="#33302A" stroke-width="3" stroke-linejoin="round"/>
-    </g>
     <path id="psoph-blob" d="M210 20 C300 -10 420 40 430 150 C440 260 340 330 230 320 C120 310 20 260 30 160 C40 60 120 50 210 20 Z"/>
   </defs>
 </svg>
 
 <nav aria-label="Main">
   <div class="nav-inner">
-    <svg class="mark" viewBox="0 0 120 138" role="img" aria-label="PSoPh shield logo"><use href="#psoph-mark"/></svg>
+    <img class="mark" src="logo.svg" alt="Princeton Society of Philosophy Students logo">
     <span class="nav-name">The Princeton Philosophical Society</span>
     <div class="nav-links">
       <a href="index.html" class="active" aria-current="page">Home</a>
@@ -53,10 +36,16 @@
 <header class="hero" id="home">
   <svg class="blob one" viewBox="0 0 460 340" aria-hidden="true"><use href="#psoph-blob" fill="#F1EADB"/></svg>
   <svg class="blob two" viewBox="0 0 460 340" aria-hidden="true"><use href="#psoph-blob" fill="#EAE9DB"/></svg>
+
   <div class="wrap hero-inner">
-    <svg class="mark" viewBox="0 0 120 138" role="img" aria-label="PSoPh shield logo"><use href="#psoph-mark"/></svg>
+    <img class="mark" src="logo.svg" alt="Princeton Society of Philosophy Students logo">
+
     <h1>A free space to think and talk with others.</h1>
-    <p class="sub">The Princeton Philosophical Society is dedicated to fostering a space on campus where anyone curious about philosophy can engage in meaningful discussions and learn from contemporary thinkers through guest talks and events. We hope to build a community where everyone feels welcome to think aloud, ask big questions, and grow through conversation.</p>
+
+    <p class="sub">
+      The Princeton Philosophical Society is dedicated to fostering a space on campus where anyone curious about philosophy can engage in meaningful discussions and learn from contemporary thinkers through guest talks and events. We hope to build a community where everyone feels welcome to think aloud, ask big questions, and grow through conversation.
+    </p>
+
     <p class="question" id="question" aria-live="polite">
       <span class="question-label">This week's big question</span>
       <span id="question-text">What is philosophy and what is its value?</span>
@@ -67,8 +56,11 @@
 <section id="what-we-do">
   <div class="wrap">
     <p class="eyebrow">What we do</p>
+
     <h2>One discussion, every single week</h2>
+
     <p class="lede">No background in philosophy needed at all. All are welcome.</p>
+
     <!--
     <div class="cards">
       <div class="card">
@@ -76,6 +68,7 @@
         <h3>Guest speakers &amp; discussions</h3>
         <p>Talks from contemporary thinkers, followed by open group discussion. Come with questions, leave with more of them.</p>
       </div>
+
       <div class="card">
         <span class="tag">Biweekly</span>
         <h3>Reading group</h3>
@@ -91,14 +84,15 @@
           <dt>When</dt>
           <dd>First meeting: Monday, Sept 7</dd>
         </div>
+
         <div>
           <dt>Where</dt>
           <dd>Robertson Hall 002</dd>
         </div>
       </dl>
-      <!-- EDIT ME: replace # with your Princeton listserv signup link -->
-      <a 
-        class="btn" 
+
+      <a
+        class="btn"
         href="https://lists.princeton.edu/cgi-bin/wa?SUBED1=psoph-list&A=1"
         target="_blank"
         rel="noopener noreferrer"
@@ -110,7 +104,7 @@
 </section>
 
 <footer>
-  <svg class="mark" viewBox="0 0 120 138" aria-hidden="true"><use href="#psoph-mark"/></svg>
+  <img class="mark" src="logo.svg" alt="">
   The Princeton Philosophical Society · PSoPh<br>
 </footer>
 

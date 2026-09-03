@@ -59,7 +59,7 @@
     <p class="sub">The Princeton Society of Philosophy Students is dedicated to fostering a space on campus where anyone curious about philosophy can engage in meaningful discussions and learn from contemporary thinkers through guest talks and events. We hope to build a community where everyone feels welcome to think aloud, ask big questions, and grow through conversation.</p>
     <p class="question" id="question" aria-live="polite">
       <span class="question-label">This week's big question</span>
-      <span id="question-text">What do we owe each other?</span>
+      <span id="question-text">What is philosophy and what is its value?</span>
     </p>
   </div>
 </header>
@@ -113,32 +113,6 @@
   <svg class="mark" viewBox="0 0 120 138" aria-hidden="true"><use href="#psoph-mark"/></svg>
   Princeton Society of Philosophy Students · PSoPh<br>
 </footer>
-
-<script>
-  // Gently rotating "big question" in the hero
-  const questions = [
-    "What do we owe each other?",
-    "Is there something it is like to be a bat?",
-    "Can we step in the same river twice?",
-    "What makes a life go well?",
-    "Do we choose our beliefs?",
-    "What is it to know something?"
-  ];
-  const el = document.getElementById("question-text");
-  const wrapEl = document.getElementById("question");
-  let i = 0;
-  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (!reduced) {
-    setInterval(() => {
-      wrapEl.classList.add("fade");
-      setTimeout(() => {
-        i = (i + 1) % questions.length;
-        el.textContent = questions[i];
-        wrapEl.classList.remove("fade");
-      }, 600);
-    }, 6000);
-  }
-</script>
 
 </body>
 </html>

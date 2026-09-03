@@ -72,9 +72,9 @@
   }
 
   .nav-inner .mark{
-    width:44px;
-    height:44px;
-    object-fit:contain;
+    width:46px;
+    height:auto;
+    display:block;
     flex-shrink:0;
   }
 
@@ -146,10 +146,9 @@
   }
 
   .hero .mark{
-    width:138px;
-    height:138px;
-    object-fit:contain;
-    margin:0 auto 26px;
+    width:150px;
+    height:auto;
+    margin:0 auto 30px;
     display:block;
   }
 
@@ -446,9 +445,8 @@
   }
 
   footer .mark{
-    width:35px;
-    height:35px;
-    object-fit:contain;
+    width:42px;
+    height:auto;
     margin:0 auto 12px;
     display:block;
     opacity:.85;
@@ -472,5 +470,17 @@
 
     #events iframe{
       height:440px;
+    }
+
+    .nav-inner .mark{
+      width:42px;
+    }
+
+    .hero .mark{
+      width:130px;
+    }
+
+    footer .mark{
+      width:38px;
     }
   }

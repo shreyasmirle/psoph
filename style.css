@@ -484,3 +484,17 @@
       width:38px;
     }
   }
+
+/* ---------- SPACING + WIDTH FIXES ---------- */
+
+/* Home: equal gap above and below the mission statement */
+.hero h1        { margin-bottom: 0; }
+.hero .sub      { margin-top: 2.2rem; margin-bottom: 2.2rem; }
+.hero .question { margin-top: 0; }
+
+/* Resources: breathing room between the dashed box and "Other" */
+.resource-empty { margin-bottom: 0; }
+.section-follow { margin-top: 4rem; }
+
+/* Resources: let the paragraphs run the full width of the page */
+#resources .lede { max-width: none; }

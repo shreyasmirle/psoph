@@ -494,7 +494,7 @@
 
 /* Resources: breathing room between the dashed box and "Other" */
 .resource-empty { margin-bottom: 0; }
-.section-follow { margin-top: 4rem; }
+.section-follow { margin-top: 2.5rem; }
 
 /* Resources: let the paragraphs run the full width of the page */
 #resources .lede { max-width: none; }
